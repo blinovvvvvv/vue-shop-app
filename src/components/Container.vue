@@ -1,0 +1,13 @@
+<script setup lang="ts"></script>
+
+<template>
+	<div class="container">
+		<slot />
+	</div>
+</template>
+
+<style scoped>
+.container {
+	@apply max-w-[1280px] mx-auto;
+}
+</style>
