@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Filter from '../common/Filter/Filter.vue'
+</script>
 
 <template>
 	<div class="welcome">
@@ -7,6 +9,7 @@
 			Find everything you need to look and feel your best, and shop the latest
 			fashion and lifestyle products
 		</p>
+		<Filter />
 	</div>
 </template>
 
@@ -20,6 +23,6 @@
 }
 
 .slogan {
-	@apply text-lg text-[#c2c2c2] font-medium max-w-xl mx-auto;
+	@apply text-lg text-[#c2c2c2] font-medium max-w-xl mx-auto mb-6;
 }
 </style>

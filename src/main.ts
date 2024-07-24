@@ -1,3 +1,4 @@
+import { createPinia } from 'pinia'
 import 'primeicons/primeicons.css'
 import { createApp } from 'vue'
 import { createMemoryHistory, createRouter } from 'vue-router'
@@ -12,7 +13,9 @@ const router = createRouter({
 	routes,
 })
 
+const pinia = createPinia()
 const app = createApp(App)
 
+app.use(pinia)
 app.use(router)
 app.mount('#app')

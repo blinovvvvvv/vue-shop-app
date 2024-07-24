@@ -9,6 +9,7 @@
 	},
 	"dependencies": {
 		"@supabase/supabase-js": "^2.44.4",
+		"pinia": "^2.1.7",
 		"primeicons": "^7.0.0",
 		"vue": "^3.4.31",
 		"vue-router": "4"

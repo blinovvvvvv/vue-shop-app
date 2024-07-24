@@ -1,12 +1,10 @@
 <script setup lang="ts">
-
-
 const headerItems = ['Men', 'Women', 'Kids', 'Apparel']
 </script>
 
 <template>
 	<header class="header">
-		<div class="logo">Vue Shop</div>
+		<RouterLink to="/" class="logo">Vue Shop</RouterLink>
 		<ul class="links">
 			<li v-for="link in headerItems" :key="link">
 				<RouterLink
@@ -22,7 +20,7 @@ const headerItems = ['Men', 'Women', 'Kids', 'Apparel']
 			<button>
 				<i class="pi pi-search" style="font-size: 1.2rem"></i>
 			</button>
-			<RouterLink to='/cart'>
+			<RouterLink to="/cart">
 				<i class="pi pi-shopping-cart" style="font-size: 1.4rem"></i>
 			</RouterLink>
 		</div>
