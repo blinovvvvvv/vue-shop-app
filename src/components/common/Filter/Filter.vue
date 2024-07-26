@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { Filters, useFilterStore } from './filter.store'
+import { Categories, useFilterStore } from './filter.store'
 
 interface FilterItem {
 	name: string
-	value: Filters
+	value: Categories
 }
 
 const filterItems: FilterItem[] = [

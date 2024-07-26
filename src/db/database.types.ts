@@ -11,31 +11,37 @@ export type Database = {
 		Tables: {
 			shoes: {
 				Row: {
+					category: Database['public']['Enums']['category']
 					created_at: string
-					description: string | null
+					description: string
 					id: number
-					images: string[] | null
-					name: string | null
-					size: string[] | null
-					tags: string[] | null
+					images: string[]
+					name: string
+					price: number
+					size: string[]
+					tags: string[]
 				}
 				Insert: {
+					category?: Database['public']['Enums']['category']
 					created_at?: string
-					description?: string | null
+					description?: string
 					id?: number
-					images?: string[] | null
-					name?: string | null
-					size?: string[] | null
-					tags?: string[] | null
+					images?: string[]
+					name?: string
+					price?: number
+					size?: string[]
+					tags?: string[]
 				}
 				Update: {
+					category?: Database['public']['Enums']['category']
 					created_at?: string
-					description?: string | null
+					description?: string
 					id?: number
-					images?: string[] | null
-					name?: string | null
-					size?: string[] | null
-					tags?: string[] | null
+					images?: string[]
+					name?: string
+					price?: number
+					size?: string[]
+					tags?: string[]
 				}
 				Relationships: []
 			}
@@ -47,7 +53,7 @@ export type Database = {
 			[_ in never]: never
 		}
 		Enums: {
-			[_ in never]: never
+			category: 'jordan' | 'air-max' | 'air-force'
 		}
 		CompositeTypes: {
 			[_ in never]: never
